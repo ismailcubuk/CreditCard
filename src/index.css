@@ -1,0 +1,404 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #ddeefc;
+    height: 100vh;
+
+}
+
+.card-form {
+    max-width: 570px;
+    margin: auto;
+    width: 100%;
+
+}
+
+.card-list {
+    margin-bottom: -130px;
+    padding-top: 30px;
+}
+
+.card-item {
+    max-width: 430px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+/* FLİP */
+.flip-card-inner {
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/* CARD-FRONT */
+.card-front {
+    background-image: url(https://media.istockphoto.com/id/952039286/photo/abstract-background-wallpaper.jpg?s=170667a&w=0&k=20&c=0cZHtsWQVwVllZt0gCd1apfTZs7eBE6zrmnCz8fZkEA=);
+    background-size: cover;
+    max-width: 430px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-item-wrapper {
+    padding: 25px 15px;
+    position: relative;
+    height: 100%;
+}
+
+/* CARD TOP */
+.card-item-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 0px 10px;
+}
+
+.card-item-top>img {
+    width: 60px;
+}
+
+/* VİSA */
+
+.card-type {
+    height: 45px;
+    position: relative;
+    display: flex;
+    max-width: 100px;
+    margin-left: auto;
+    width: 100%;
+}
+
+.card-type>img {
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 100%;
+    object-position: top right;
+}
+
+/* CARD NUMBER */
+
+.card-item-number {
+    text-align: center;
+    letter-spacing: 2px;
+    width: 400px;
+    height: 54px;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+/* CARD BOTTOM */
+
+.card-item-bot {
+    color: white;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* CARD BOT LEFT SİDE */
+.card-name {
+    width: 70%;
+    padding: 10px 0px 10px 15px;
+    font-weight: 600;
+    display: block;
+}
+
+.card-item-holder {
+    opacity: 0.7;
+    font-size: 13px;
+    margin-bottom: 6px;
+    padding-left: 10px;
+}
+
+.card-item-name {
+    padding-top: 3px;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 1;
+    white-space: nowrap;
+    max-width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+    height: 30px;
+}
+
+
+/* CARD BOT RİGHT SİDE */
+.card-item-date {
+    flex-wrap: wrap;
+    font-size: 18px;
+    margin-left: auto;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    width: 90px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-right: 10px;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+.card-date-title {
+    opacity: 0.7;
+    font-size: 13px;
+    padding-bottom: 6px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-date {
+    display: flex;
+}
+
+/* CARD-BACK */
+.card-back {
+    background-image: url(https://media.istockphoto.com/id/952039286/photo/abstract-background-wallpaper.jpg?s=170667a&w=0&k=20&c=0cZHtsWQVwVllZt0gCd1apfTZs7eBE6zrmnCz8fZkEA=);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.card-back-black-line {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.card-back-item-cvv {
+    text-align: right;
+    position: relative;
+    z-index: 2;
+    padding: 15px;
+}
+
+.card-back-cvv-tittle {
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.card-back-cvv-band {
+    height: 45px;
+    background-color: white;
+    margin-bottom: 30px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    color: #1a3b5d;
+    font-size: 18px;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px -7px;
+}
+
+.card-back-card-type {
+    height: 45px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100px;
+    margin-left: auto;
+    width: 100%;
+}
+
+/* FORM AREA */
+.card-form-input-area {
+    background-color: white;
+    box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%);
+    border-radius: 10px;
+    padding: 35px;
+    padding-top: 180px;
+}
+
+.card-form-input {
+    margin-bottom: 20px;
+}
+
+.card-form-input>input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ced6e0;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    padding: 5px 15px;
+    background: none;
+    color: #1a3b5d;
+    outline: none;
+}
+
+.card-form-input>input:hover {
+    border: 1px solid rgb(0, 153, 255);
+}
+
+.card-form-input>input:focus {
+    border: 1px solid rgb(0, 153, 255);
+}
+
+
+/* DATE */
+.card-form-bottom {
+    display: flex;
+    align-items: flex-start;
+}
+
+.card-form-date-item {
+    flex: auto;
+    margin-right: 35px;
+}
+
+.card-form-ym-input {
+    display: flex;
+}
+
+.card-form-date {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card-form-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #1a3b5d;
+    width: 100%;
+    display: block;
+    /* user-select: none; */
+}
+
+.card-form-month-input>select:hover {
+    border: 1px solid rgb(0, 153, 255);
+}
+
+.card-form-month-input>select:focus {
+    border: 1px solid rgb(0, 153, 255);
+}
+
+
+.card-form-month-input {
+    padding-right: 15px;
+}
+
+.card-form-month-input>select {
+    border: 1px solid #ced6e0;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    padding-left: 20px;
+    outline: none;
+    font-weight: 500;
+}
+
+.input-option {
+    font-size: 16px;
+}
+
+.card-form-year-input>select {
+    border: 1px solid #ced6e0;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    padding-left: 20px;
+    outline: none;
+    font-weight: 500;
+}
+
+.card-form-year-input>select:hover {
+    border: 1px solid rgb(0, 153, 255);
+}
+
+.card-form-year-input>select:focus {
+    border: 1px solid rgb(0, 153, 255);
+}
+
+.card-form-cvv-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #1a3b5d;
+    width: 100%;
+    display: block;
+    /* user-select: none; */
+}
+
+.card-form-cvv-input>input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ced6e0;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    padding: 5px 15px;
+    background: none;
+    color: #1a3b5d;
+    outline: none;
+}
+
+
+.card-form-cvv-input>input:hover {
+    border: 1px solid rgb(0, 153, 255);
+}
+
+.card-form-cvv-input>input:focus {
+    border: 1px solid rgb(0, 153, 255);
+}
