@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/CreditCard/static/css/main.00a85601.css",
+    "main.js": "/CreditCard/static/js/main.947e862b.js",
+    "static/media/chip.png": "/CreditCard/static/media/chip.f88a902d8d270caaf1ac.png",
+    "index.html": "/CreditCard/index.html",
+    "main.00a85601.css.map": "/CreditCard/static/css/main.00a85601.css.map",
+    "main.947e862b.js.map": "/CreditCard/static/js/main.947e862b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00a85601.css",
+    "static/js/main.947e862b.js"
+  ]
+}
